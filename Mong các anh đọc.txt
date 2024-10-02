@@ -1,0 +1,6 @@
+Dạ em xin chào các anh,
+Mấy nay em nằm viện, khi về đã là ngày thứ 4 kể từ khi em nhận mail project ạ. Vì thời gian gấp rút nên em chỉ có thể làm một số chức năng core của Project
+Ngoài filter By Category ra, em có thể thêm các bảng color, style,... để filter.
+Em có thể làm thêm bằng JWT Token để Authenticate bằng Spring Security khi mà Post,Put,Delete Category hoặc Product, và Login, Register để nhận sessionToken.
+Vì thời gian gấp rút nên em chỉ demo vài chức năng core của project.
+Mong các anh xem xét và cho em một cơ hội để phỏng vấn ạ

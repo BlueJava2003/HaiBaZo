@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "d23fdcc9-175c-435b-a719-5a567f5efa9b",
+		"name": "HaiBaZoProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32767508",
+		"_collection_link": "https://lively-resonance-396995.postman.co/workspace/Java10-SpringRestAPI~c14d19da-6c74-497c-aa79-84b40e04fc27/collection/32767508-d23fdcc9-175c-435b-a719-5a567f5efa9b?action=share&source=collection_link&creator=32767508"
+	},
+	"item": [
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "localhost:8088/api/v1/categories",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8088/api/v1/categories?page=1&limit=12",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}categories/id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}categories/2",
+							"host": [
+								"{{API_PREFIX}}categories"
+							],
+							"path": [
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjExMjIzMzQ0IiwidXNlcklkIjozLCJzdWIiOiIxMTIyMzM0NCIsImV4cCI6MTcxMDg2MTE1OH0.vGej2rTnDuJ22puoKdA5qHhtVs0Kreg3Z90V4P5GzvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Phụ kiện xyz\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}categories",
+							"host": [
+								"{{API_PREFIX}}categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjExMjIzMzQ0IiwidXNlcklkIjozLCJzdWIiOiIxMTIyMzM0NCIsImV4cCI6MTcwMjY4OTc0OX0.ynE2Py5sKywzVZVCgBlQe0SrweiJumnU7w4bogqmk2s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Đồ điện tử\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}categories/1",
+							"host": [
+								"{{API_PREFIX}}categories"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjMzNDQ1NTY2IiwidXNlcklkIjo1LCJzdWIiOiIzMzQ0NTU2NiIsImV4cCI6MTcwMjgxMzY1NH0.H9tswIuAdSLM6QDGkQgjBjUzpjYhiwHgEHbccUK_TDk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}categories/1",
+							"host": [
+								"{{API_PREFIX}}categories"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "{{API_PREFIX}}products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}products?page=0&limit=10&keyword=&category_id=3",
+							"host": [
+								"{{API_PREFIX}}products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "keyword",
+									"value": ""
+								},
+								{
+									"key": "category_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}products/imageFile",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}products/images/0d83d40d-78e9-4c7d-80ee-3b5b68003104_002.jpg",
+							"host": [
+								"{{API_PREFIX}}products"
+							],
+							"path": [
+								"images",
+								"0d83d40d-78e9-4c7d-80ee-3b5b68003104_002.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}products/id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ipad pro 2023\",\r\n    \"price\": 812.34,\r\n    \"thumbnail\": \"\",\r\n    \"description\": \"This is a test product\",\r\n    \"category_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}products/2",
+							"host": [
+								"{{API_PREFIX}}products"
+							],
+							"path": [
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}products/4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjMzNDQ1NTY2IiwidXNlcklkIjo1LCJzdWIiOiIzMzQ0NTU2NiIsImV4cCI6MTcwMjY4Njk2N30.hb9vRAKj8rwvi11S35_tcZtMlTcATzdmhnAYu_6PM7E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ipad pro 2023\",\r\n    \"price\": 812.34,\r\n    \"thumbnail\": \"\",\r\n    \"description\": \"This is a test product\",\r\n    \"category_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}products/4",
+							"host": [
+								"{{API_PREFIX}}products"
+							],
+							"path": [
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT_TOKEN\n}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"macbook air 15 inch 2023\",\r\n\t\"price\": 812.34,\r\n\t\"description\": \"This is a test product\",\r\n\t\"category_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}products",
+							"host": [
+								"{{API_PREFIX}}products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}products/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT_TOKEN\n}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Fantastic Bronze Watch22\",\r\n\t\"price\": 89.89,\r\n\t\"description\": \"Voluptas nemo quis doloribus nisi optio culpa.22\",\r\n\t\"category_id\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}products/2",
+							"host": [
+								"{{API_PREFIX}}products"
+							],
+							"path": [
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}}products/uploads/{id}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "postman-cloud:///1eed936f-7c4d-4f40-8287-26f9b33e1286"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}products/uploads/2",
+							"host": [
+								"{{API_PREFIX}}products"
+							],
+							"path": [
+								"uploads",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{API_PREFIX}} generateFakeProducts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{API_PREFIX}}products/generateFakeProducts",
+							"host": [
+								"{{API_PREFIX}}products"
+							],
+							"path": [
+								"generateFakeProducts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product_images",
+			"item": [
+				{
+					"name": "{{API_PREFIX}}product_images/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT_TOKEN\n}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ipad pro 2023\",\r\n    \"price\": 812.34,\r\n    \"thumbnail\": \"\",\r\n    \"description\": \"This is a test product\",\r\n    \"category_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_PREFIX}}product_images/140",
+							"host": [
+								"{{API_PREFIX}}product_images"
+							],
+							"path": [
+								"140"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
